@@ -1,0 +1,38 @@
+# File defining operations for dataprep
+# Format:
+# <operation> <source layers> <destination layers> <sizing amount in microns>
+# Operations supported: add,sub
+#   add: Create a region from all shapes of the source layers and combine this region with each destion layer region separately
+#   sub: Same as add but don't build combination but cross-section instead
+# Sizing amount uses the klayout sizing operation to size the regions of the source layers
+# During dataprep the regions are merged, meaning overlapping polygons will become one Polygon
+# source/destination layers are separated by commas if there are multiple
+# Each argument is separated by white spaces. How many should not matter as they will be parsed by a python str.split() operation which should be able to handle any white space amount.
+# If the first word of a line is not a supported operation the line will be ignored
+# The lines will be executed in order meaning and add sub operations on layers will be different than a first sub and then add
+add phot_silicon.drawing,phot_poly.drawing active.blockage,poly.blockage,metal1.blockage,metal2.blockage,metal3.blockage,metal4.blockage,metal5.blockage,metal6.blockage,nwell.drawing,nimplant.drawing 2.0
+add phot_silicon.drawing active.drawing
+add phot_poly.drawing poly.drawing
+add phot_nwell.drawing nwell.drawing
+add phot_pwell.drawing pwell.drawing
+sub phot_nimplant.drawing nwell.drawing,nimplant.drawing
+add phot_pimplant.drawing pwell.drawing,pimplant.drawing
+add metal1.drawing metal1.drawing
+add metal2.drawing metal2.drawing
+add metal3.drawing metal3.drawing
+add metal5.drawing metal5.drawing
+add metal8.drawing metal8.drawing
+add metal7.drawing metal7.drawing
+add metal6.drawing metal6.drawing
+add metal9.drawing metal9.drawing
+add metal10.drawing metal10.drawing
+add contact.drawing contact.drawing
+add via1.drawing via1.drawing
+add via2.drawing via2.drawing
+add via3.drawing via3.drawing
+add via4.drawing via4.drawing
+add via5.drawing via5.drawing
+add via6.drawing via6.drawing
+add via7.drawing via7.drawing
+add via8.drawing via8.drawing
+add via9.drawing via9.drawing
