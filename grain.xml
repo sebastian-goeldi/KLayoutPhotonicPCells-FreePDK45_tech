@@ -8,7 +8,7 @@
  <title>FreePDK45 Technology</title>
  <doc>See KLayoutPhotonicPCells/core README 'Import Technology' for more information.</doc>
  <doc-url>https://github.com/sebastian-goeldi/KLayoutPhotonicPCells-core/blob/master/doc/build/latex/KLayoutPhotonicPCells.pdf</doc-url>
- <url/>
+ <url>https://github.com/sebastian-goeldi/KLayoutPhotonicPCells-FreePDK45_tech.git/tags/v0.0.1</url>
  <license>Apache-2.0</license>
  <author>Sebastian Goeldi</author>
  <author-contact>sebastian.goeldi@protonmail.com</author-contact>
@@ -19,6 +19,6 @@
  <depends>
   <name>KLayoutPhotonicPCells/core</name>
   <url/>
-  <version>0.0.3</version>
+  <version>0.0.1</version>
  </depends>
 </salt-grain>
