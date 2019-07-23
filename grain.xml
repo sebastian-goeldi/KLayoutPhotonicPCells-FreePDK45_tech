@@ -3,7 +3,7 @@
  <name>KLayoutPhotonicPCells/FreePDK45_tech</name>
  <token/>
  <hidden>false</hidden>
- <version>0.0.2</version>
+ <version>0.0.3</version>
  <api-version>0.25</api-version>
  <title>FreePDK45 Technology</title>
  <doc>See KLayoutPhotonicPCells/core README 'Import Technology' for more information.</doc>
@@ -19,6 +19,6 @@
  <depends>
   <name>KLayoutPhotonicPCells/core</name>
   <url/>
-  <version>0.0.2</version>
+  <version>1.0.3</version>
  </depends>
 </salt-grain>
